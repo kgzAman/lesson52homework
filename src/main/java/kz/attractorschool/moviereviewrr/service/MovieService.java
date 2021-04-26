@@ -25,7 +25,7 @@ public class MovieService {
 
     public List<Movie> findALl(){
         return (List<Movie>) movieRepository.findAll();
-
     }
+
 
 }

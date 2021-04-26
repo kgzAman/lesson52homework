@@ -28,14 +28,14 @@ public class Review {
     private String review;
 
     @DBRef
-    private User reviewer;
+    private User user;
 
     @DBRef
     private Movie movie;
 
-    public static Review random(User reviewer, Movie toMovie) {
+    public static Review random(User user, Movie toMovie) {
         return builder()
-                .reviewer(reviewer)
+                .user(user)
                 .movie(toMovie)
                 .review(Generator.makeDescription())
                 .stars(r.nextInt(5)+1)
