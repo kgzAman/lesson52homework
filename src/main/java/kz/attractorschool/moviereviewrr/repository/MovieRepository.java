@@ -14,5 +14,5 @@ public interface MovieRepository extends CrudRepository<Movie, String> {
     List<Movie> findByTitleContains(String partTitle);
     List<Movie> findByReleaseYear(Integer year);
     List<Movie> findByActorsIn(List<String> actors);
-    Page<Movie> findAll (Pageable pageable);
+
 }
